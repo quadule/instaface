@@ -6,7 +6,7 @@ class InstagramSearch
 		end
 	end
 	
-	def at(lat, lng)
-		Instagram.media_search(lat, lng)
+	def at(lat = 37.757141, lng = -122.456911)
+		Instagram.media_search(lat, lng, distance: 5000)
 	end
 end
