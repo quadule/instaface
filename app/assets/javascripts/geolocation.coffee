@@ -1,9 +1,10 @@
-$ ->
-	navigator.geolocation.getCurrentPosition(geolocate, promptForLocation, {});
+navigator.geolocation.getCurrentPosition(geolocate, geolocate, {});
+
+geolocate = (position) -> 
+	alert("We have your location. #{position.coords.latitude}, #{position.coords.longitude}")
 	
-	geolocate = position ->
-		# Async call to server to pull down newest photos
-		alert("We have your location. #{position.coords.latitude}, #{position.coords.longitude}")
-		
-	promptForLocation = ->
-		# Lightbox a request for a location
+promptForLocation = ->
+	# Lightbox a request for a location
+	true
+
+true
