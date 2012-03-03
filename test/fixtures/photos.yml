@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  url: MyString
+  thumbnail_url: MyString
+  caption: MyString
+  filter: MyString
+  distance: 1
+  username: MyString
+  profile_picture_url: MyString
+  link: MyString
+  taken_at: 2012-03-02 23:29:27
+
+two:
+  url: MyString
+  thumbnail_url: MyString
+  caption: MyString
+  filter: MyString
+  distance: 1
+  username: MyString
+  profile_picture_url: MyString
+  link: MyString
+  taken_at: 2012-03-02 23:29:27
