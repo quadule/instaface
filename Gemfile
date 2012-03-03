@@ -9,7 +9,7 @@ gem 'face'
 gem 'sqlite3'
 
 
-group :test do
+group :development, :test do
   gem 'capybara'
   gem 'rspec-rails'
 end
