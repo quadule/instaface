@@ -16,6 +16,7 @@ group :development, :test do
 end
 
 gem 'activerecord-mysql2spatial-adapter'
+gem 'face'
 gem 'geokit'
 gem 'instagram', "~> 0.8.3"
 gem 'jquery-rails'
