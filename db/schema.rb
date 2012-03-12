@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120312013347) do
+ActiveRecord::Schema.define(:version => 20120312023706) do
 
   create_table "people", :force => true do |t|
     t.text     "data"
@@ -32,6 +32,9 @@ ActiveRecord::Schema.define(:version => 20120312013347) do
     t.datetime "taken_at"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
+    t.string   "instagram_id"
   end
+
+  add_index "photos", ["instagram_id"], :name => "index_photos_on_instagram_id", :unique => true
 
 end

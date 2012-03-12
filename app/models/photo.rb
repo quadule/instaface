@@ -1,11 +1,14 @@
 class Photo < ActiveRecord::Base
   has_many :people, :dependent => :destroy
   
+  validates :instagram_id, uniqueness: true, allow_nil: true
+  
 	def self.batch_from_instagram(photos)
 		return_photos = []
 		photos.each do |photo|
 			logger.info photo
 			return_photos << self.create({
+				instagram_id:         photo.id,
 				url: 									photo.images.standard_resolution.url,
 				thumbnail_url: 				photo.images.thumbnail.url,
 				caption: 							(photo.caption.text unless photo.caption.blank?),
