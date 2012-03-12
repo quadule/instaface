@@ -1,4 +1,6 @@
 class Photo < ActiveRecord::Base
+  has_many :people, :dependent => :destroy
+  
 	def self.batch_from_instagram(photos)
 		return_photos = []
 		photos.each do |photo|

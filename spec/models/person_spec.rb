@@ -6,10 +6,10 @@ describe Person do
     it { should respond_to(:faces_detect) }
   end
   
-  describe '.create_from_faces' do
+  describe '.batch_from_photo' do
     context 'using an image of two people' do
-      image_url = "http://www.comicmix.com/wp-content/uploads/2011/02/prince-william-kate-middleton.jpg"
-      subject { Person.create_from_faces(image_url) }
+      photo =  Photo.create url: "http://www.comicmix.com/wp-content/uploads/2011/02/prince-william-kate-middleton.jpg"
+      subject { Person.batch_from_photo(photo) }
       
       it { should have(2).people }
     end
