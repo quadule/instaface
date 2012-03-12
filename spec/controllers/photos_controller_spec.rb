@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe FacesController do
+describe PhotosController, :vcr => true do
   describe 'GET index' do
     it 'succeeds' do
       get :index
