@@ -1,4 +1,6 @@
 class Photo < ActiveRecord::Base
+  scope :faces, joins(:people).group(:photo_id)
+  
   has_many :people, :dependent => :destroy
   
   validates :instagram_id, uniqueness: true, allow_nil: true

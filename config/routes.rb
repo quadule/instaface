@@ -1,3 +1,4 @@
 Instaface::Application.routes.draw do
-  get "photos/index"
+  resources :faces, :only => :index
+  resources :photos, :only => :index
 end
