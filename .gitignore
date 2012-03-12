@@ -15,5 +15,5 @@
 /log/*.log
 /tmp
 
-# Ignore instagram API keys
-/config/initializers/instagram.rb
+# Ignore API keys
+/config/secrets.rb
