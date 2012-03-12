@@ -6,8 +6,9 @@ class InstagramSearch
 		end
 	end
 	
-	def at(lat = 37.757141, lng = -122.456911)
-		Instagram.media_search(lat, lng, distance: 5000)
+	def at(lat, lng, options={})
+	  options.reverse_merge!(distance: 5000)
+		Instagram.media_search(lat, lng, options)
 	rescue SocketError
 		Hashie::Mash.new data: []
 	end
