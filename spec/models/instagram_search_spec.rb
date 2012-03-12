@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe InstagramSearch do
+describe InstagramSearch, :vcr => true do
   let!(:instagram) { InstagramSearch.new.at }
 
 	it "returns a hash" do

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Person do
+describe Person, :vcr => true do
   describe '.api' do
     subject { Person.api }
     it { should respond_to(:faces_detect) }
@@ -8,10 +8,14 @@ describe Person do
   
   describe '.batch_from_photo' do
     context 'using an image of two people' do
-      photo =  Photo.create url: "http://www.comicmix.com/wp-content/uploads/2011/02/prince-william-kate-middleton.jpg"
-      subject { Person.batch_from_photo(photo) }
+      subject do
+        photo = Photo.create url: "http://www.comicmix.com/wp-content/uploads/2011/02/prince-william-kate-middleton.jpg"
+        Person.batch_from_photo photo
+      end
       
-      it { should have(2).people }
+      it 'should have two people' do
+        should have(2).people
+      end
     end
   end
 end

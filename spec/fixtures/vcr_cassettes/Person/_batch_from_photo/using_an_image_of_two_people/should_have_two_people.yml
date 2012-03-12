@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.face.com/faces/detect.json
+    body:
+      encoding: US-ASCII
+      string: urls=http%3A%2F%2Fwww.comicmix.com%2Fwp-content%2Fuploads%2F2011%2F02%2Fprince-william-kate-middleton.jpg&attributes=all&api_key=a2a5536046399c31aae306de3c711434&api_secret=2d1c749cb23a4843789721a0e101c04f
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '205'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 12 Mar 2012 02:13:50 GMT
+      Server:
+      - Apache/2.2.16 (Debian) mod_ssl/2.2.16 OpenSSL/0.9.8o
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '829'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8yWyY7jNhCGX8XgdWSamxbqlEtyayCHucUDgZZoiQm1QKLG
+        3Wn43acoyWsExAjmEBgwRPJn1V9FfpY/UVe1rh1Q+scnGnuLUlQ516X73X53
+        Op1w3tYmr827f4CZbpu3jdON2+/GzraqGPY7Rijd7wjb77reNLnenoy1RtXb
+        v5TT29oUhdWubfCfXYkC1JkCcvz2i1AxkTGP8+OBqpCxgipa8EQwfmAHlh8z
+        xVQY8oiIiEuZc6qU5iQqNM9jSgUXEOtkClehVBASoEqbsnLLwKlyrshN2b7+
+        +vZ79hNSZizChGQ8wiHJ4AMWep23ZWP+VgerUer6UUP2qtdD1VpI3YzWBmg0
+        hbfzLUCluU5addC+3RAEeno0fa1h7ajsACFq1YzKXodQT6n77LZ5qZyHt8L9
+        cw4no3uUfqJ3lLIoQB8wD27PAdIfOrP66JZFKjGdllmC42W5nwNN65xjOe9n
+        MZY+QN2OrroPwSheUgiBk/gqeTQRX0UhPF1FD7kYlvQSiDHQNO2gbwEInwsJ
+        cSS9VdUvNuZe+PESbp7IK9Ncnj/UCaVbiqWAs2ottJRMhjrjcn91cCIDpJzr
+        zWF0evBJVakzPUzmvis76rmT0xkVGu43ShPv0ctq9X4vSx5l3sFF6B3dhGJV
+        eFS5vlMhf5vQo1L6Npe6KeYGX5S1ss9K4T2WVg3DXNVFOt2oJy2joLWmexB2
+        qndwI5/yJ9MJtsW9UjVl//EkDDkIh9pY05T/lj5m5/M5+OmwxiFOkkwQ//2/
+        gJXh+J7XefhAy2R5JsHb/ie2UYzDBWuOpyN+BjeBsGxWCMzpGrhRhJNwzgLh
+        2Dq4MceLkwRHYpXbhACQF42kj9zGAsvZh6A4Yv+NW0iQ3Lj1qC7cbhmOwhfA
+        5U9QJKvgcvIquOvCV8CVq+Ae9Qq608/ti+hOQL6EbkxX0K1U1z2jK6J1dFeq
+        SjiQ++0MrAxOuRFMoGHMcz0MIBwHaKAPMA4eFur5q5VpprBCSumN1wbOKyT+
+        pQ0capc5U+vM6XeYRm9tE2wo27ypfgP/MtiGMHgLpJRvvsCOmejLHkjAOQ2p
+        jCmY+gEAAP//AwAtad4X1wgAAA==
+    http_version: 
+  recorded_at: Mon, 12 Mar 2012 02:13:53 GMT
+recorded_with: VCR 2.0.0
